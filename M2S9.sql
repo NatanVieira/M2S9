@@ -134,8 +134,13 @@ use Banking;
 --	   (900,'2022-01-01 10:41:00','2022-01-01 10:41:01',3,13,3),
 --	   (1000,'2022-01-01 10:42:00','2022-01-01 10:42:01',3,14,3);
 
--- Exercicio 03
+---- Exercicio 03
 
-select Conta.id, Conta.valor, Cliente.nome_completo, Cliente.cpf from Conta 
-inner join Cliente on Cliente.id = Conta.cliente_id
-order by Conta.valor;
+--select Conta.id, Conta.valor, Cliente.nome_completo, Cliente.cpf from Conta 
+--inner join Cliente on Cliente.id = Conta.cliente_id
+--order by Conta.valor;
+
+-- Exercicio 04
+
+select top 1 nome_completo, data_nascimento, datediff(year, data_nascimento, convert(date,getdate())) from Cliente
+order by data_nascimento;
