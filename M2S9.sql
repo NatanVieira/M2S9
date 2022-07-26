@@ -140,7 +140,11 @@ use Banking;
 --inner join Cliente on Cliente.id = Conta.cliente_id
 --order by Conta.valor;
 
--- Exercicio 04
+---- Exercicio 04
 
-select top 1 nome_completo, data_nascimento, datediff(year, data_nascimento, convert(date,getdate())) from Cliente
-order by data_nascimento;
+--select top 1 nome_completo, data_nascimento, datediff(year, data_nascimento, convert(date,getdate())) from Cliente
+--order by data_nascimento;
+
+-- Exercicio 05
+
+select count(*) from Conta where Conta.tipo_id = 1;
