@@ -147,4 +147,8 @@ use Banking;
 
 -- Exercicio 05
 
-select count(*) from Conta where Conta.tipo_id = 1;
+--select count(*) from Conta where Conta.tipo_id = 1;
+
+-- Exercicio 06
+
+select count(distinct cliente_id) from Conta where categoria_id = 2;
