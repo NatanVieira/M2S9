@@ -158,4 +158,13 @@ use Banking;
 -- não há relacionamento entre conta e conta serviço - Coloquei em Blocked
 
 -- Exercicio 08
-select count(*) from Movimento where Movimento.status_id = 2;
+--select count(*) from Movimento where Movimento.status_id = 2;
+
+-- Exercicio 09
+
+--select count(tipo_id), Movimento_Tipo.nome from Movimento
+--inner join Movimento_tipo on Movimento.tipo_id = Movimento_Tipo.id
+--group by Movimento.tipo_id;
+
+-- Exercicio 10
+select * from Movimento_Tipo;
