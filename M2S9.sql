@@ -151,4 +151,11 @@ use Banking;
 
 -- Exercicio 06
 
-select count(distinct cliente_id) from Conta where categoria_id = 2;
+--select count(distinct cliente_id) from Conta where categoria_id = 2;
+
+-- Exercicio 07
+-- como não havia cadastrado categoria diamante utilizarei a categoria platinum
+-- não há relacionamento entre conta e conta serviço - Coloquei em Blocked
+
+-- Exercicio 08
+select count(*) from Movimento where Movimento.status_id = 2;
